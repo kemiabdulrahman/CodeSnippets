@@ -1,0 +1,7 @@
+ 2055  history | sed -n '2037,2043p' > grep_commands.txt
+ 2063  history | tail -n 10 > grep_commands.txt 
+ 2039  grep -w "div" hello.txt
+ 2040  grep -wi "div" hello.txt
+ 2041  grep -win "div" hello.txt                        
+ 2042  grep -wi -B 4 "div" hello.txt
+ 2043  grep -wi -A 4 "div" hello.txt
