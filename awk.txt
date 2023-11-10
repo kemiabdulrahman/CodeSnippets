@@ -1,0 +1,29 @@
+awk '{action}' your_file_name.txt
+awk '/regex pattern/{action}' your_file_name.txt
+
+awk '{print $0}' information.txt
+awk '{print NR,$0}' information.txt 
+awk '{print $2}' information.txt
+awk '{print $1, $4}' information.txt
+awk '{print $NF}' information.txt
+
+awk '{print $1}' information.txt | head -1 
+awk '{print $1}' information.txt | head -2 
+
+awk '/^O/' information.txt
+awk '/0$/' information.txt 
+
+
+awk '! /0$/' information.txt
+
+awk ' /io/{print $0}' information.txt 
+awk '/IT/' information.txt 
+awk '/IT/{print $1, $2}' information.txt
+
+awk '$3 <  40 { print $0 }' information.txt
+
+
+
+
+
+awk '{print $1}' information.txt
